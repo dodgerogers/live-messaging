@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brochat</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<h2><%= link_to "BroChat", root_path %></h2>
+		<%= yield %>
+		<footer>
+			Live messaging just for Bro's
+		</footer>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+// fonts //
+$lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$bebas: 'BebasNeueRegular';
+
+// functions and mixins //
+// usage - @include box-sizing; or @include box-sizing(content-box); //
+
+@mixin box-sizing($value: border-box) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	box-sizing: $value;
+}
+@mixin border-radius($value: 0px) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+@mixin box-shadow($horz: 0px, $vert: 0px, $blur: 0px, $color: #fff) {
+	box-shadow: $horz $vert $blur $color;
+	-webkit-box-shadow: $horz $vert $blur $color;
+	-moz-box-shadow: $horz $vert $blur $color;
+}
+
+// Colors //
+$ice: #f6f7f8;
+$orange: #f1693c;
+$red: #E95A4D;
+$dark-red: #972219;
+$amethyst: #9B59B6;
+$wisteria: #8E44AD;
+$green: #4fc392;
+$turquoise: #1ABC9C;
+$green-sea: #16A085;
+$emerald: #2ECC71;
+$dark-emerald: #27AE60;
+$teal: #31838f;
+$asphalt: #34495E;
+$midnight: #2C3E50;
+$sky: #22ADC7;
+$ocean: #0A323A;
+$universe: #08262C;
+$blackhole: #03191D;
+$gundam: #4E545C;
+$light-gundam: #636A74;;

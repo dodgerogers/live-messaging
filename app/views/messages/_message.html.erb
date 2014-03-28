@@ -1,0 +1,6 @@
+<%= content_tag(:div, id: "message_#{message.id}", class: "message") do %>
+	<p><%= message.text %></p>
+	<small><%= link_to message.user.email, '#' %>&nbsp;
+	<%= message.created_at %>&nbsp;
+	<%= link_to raw("<i class='icon-trash'></i>"), message, method: :delete, remote: true %></small>
+<% end %>	

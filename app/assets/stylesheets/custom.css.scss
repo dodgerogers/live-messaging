@@ -1,0 +1,50 @@
+@import "variables";
+
+body {
+	background: #c94727;
+	font-family: $lucida;
+	color: $ice;
+}
+footer {
+	border-top: 1px solid #B63C25;
+	margin: 20px 0px;
+	color: #8A2D1B;
+	padding: 10px 0;
+}
+a {
+	color: #0e91a1;
+	&:hover {
+		color: #0e91a1;
+	}
+}
+h2 a {
+	color: $ice;
+	text-decoration: none;
+	&:hover {
+		text-decoration:none;
+		color: $gundam;
+	}
+}
+#messages {
+	color: #444;
+	width:100%;
+	min-height:50px;
+	max-height:400px;
+	overflow-y: scroll;
+	@include box-sizing;
+	border-radius: 5px;
+	padding: 10px;
+	background: #fff;
+	margin-bottom: 10px;
+	.message {
+		border-bottom: 1px solid #eee;
+		@include box-sizing;
+		padding: 10px 5px;
+		p {
+			margin-bottom: 5px;
+		}
+		small {
+			color: #777;
+		}
+	}
+}
